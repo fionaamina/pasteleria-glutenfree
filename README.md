@@ -28,3 +28,11 @@ pasteleria-glutenfree/
 1. Clonar el repo:
    ```bash
    git clone https://github.com/fionaamina/pasteleria-glutenfree.git
+   📄 Licencia
+Este proyecto es para fines educativos.
+
+```bash
+git add README.md
+git commit -m "Agregar README"
+git push
+
