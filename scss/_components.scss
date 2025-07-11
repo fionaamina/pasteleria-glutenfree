@@ -1,0 +1,79 @@
+// _components.scss
+
+.card {
+  border: none;
+  border-radius: $border-radius;
+  @include sombra-suave;
+  @include transition(transform, box-shadow);
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}
+
+form {
+  background-color: white;
+  padding: $espaciado-lg;
+  border-radius: $border-radius;
+  @include sombra-suave;
+
+  input, textarea {
+    border: 1px solid $color-principal;
+    &:focus {
+      border-color: $color-acento;
+      box-shadow: 0 0 5px $color-acento;
+    }
+  }
+
+  button {
+    background-color: $color-acento;
+    border: none;
+    color: white;
+    font-weight: bold;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: darken($color-acento, 10%);
+    }
+  }
+}
+$botones: (
+  "primary": #e07a5f,
+  "secondary": #6c4f3d,
+  "light": #f5ebe0
+);
+
+@each $nombre, $color in $botones {
+  .btn-#{$nombre} {
+    background-color: $color;
+    color: white;
+    padding: $espaciado-sm $espaciado-md;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.8s ease forwards;
+}

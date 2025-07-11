@@ -1,0 +1,42 @@
+// _layout.scss
+
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: $color-secundario;
+  padding: $espaciado-md;
+}
+
+.navbar {
+  a {
+    color: $color-principal;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      color: $color-acento;
+    }
+  }
+
+  .nav-link.active {
+    border-bottom: 2px solid $color-acento;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: $color-texto;
+}
+main {
+  padding: $espaciado-lg;
+
+  @include mobile {
+    padding: $espaciado-md;
+  }
+}
