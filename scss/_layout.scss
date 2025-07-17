@@ -1,5 +1,3 @@
-// _layout.scss
-
 body {
   font-family: $fuente-principal;
   background-color: $color-fondo;
@@ -10,7 +8,7 @@ body {
 
 header, footer {
   background-color: $color-secundario;
-  padding: $espaciado-md;
+  padding: $espaciado;
 }
 
 .navbar {
@@ -18,6 +16,7 @@ header, footer {
     color: $color-principal;
     font-weight: bold;
     text-decoration: none;
+
     &:hover {
       color: $color-acento;
     }
@@ -33,10 +32,29 @@ footer {
   font-size: 0.9rem;
   color: $color-texto;
 }
-main {
-  padding: $espaciado-lg;
 
-  @include mobile {
-    padding: $espaciado-md;
+main {
+  padding: $espaciado;
+
+  
+}
+.nav-link {
+  font-weight: 500;
+  color: $gris-oscuro;
+  &.active {
+    font-weight: 700;
+    color: $color-principal;
+    border-bottom: 2px solid $color-principal;
   }
+}
+.hero {
+  background-image: url("../img/fondo-home.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.logo {
+  height: 50px;
+  width: auto;
 }

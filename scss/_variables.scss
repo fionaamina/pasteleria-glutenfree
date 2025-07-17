@@ -1,19 +1,20 @@
 // _variables.scss
 
-// Colores
-$color-principal: #6c4f3d;
-$color-secundario: #f5ebe0;
-$color-acento: #e07a5f;
-$color-fondo: #fffaf5;
-$color-texto: #333;
+$color-principal: #e0a0a0;
+$color-secundario: #f3d6d3;
+$color-acento: #d87d7d;
+$color-texto: #4b4b4b;
+$color-fondo: #fff8f8;
+$gris-texto: #777;
+$blanco: #ffffff;
+$gris-oscuro: #555555;
+$gris-suave: #ebebeb;
+$fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fuente-titulos: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-// Tipografía
-$fuente-principal: 'Poppins', sans-serif;
-
-// Espaciado
-$espaciado-sm: 0.5rem;
-$espaciado-md: 1rem;
-$espaciado-lg: 2rem;
-
-// Bordes
-$border-radius: 10px;
+$espaciado-sm: 1rem;
+$espaciado-md: 1.5rem;
+$espaciado-lg: 3rem;
+$espaciado: $espaciado-md;
+$sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.1);
+$radio-borde: 20px;

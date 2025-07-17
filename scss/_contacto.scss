@@ -1,0 +1,36 @@
+// _contacto.scss
+.contacto {
+  background-color: $gris-suave;
+  padding: $espaciado-lg;
+
+  h2 {
+    font-family: $fuente-titulos;
+    color: $color-principal;
+    margin-bottom: $espaciado;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado-sm;
+
+    input,
+    textarea {
+      padding: $espaciado-sm;
+      border: 1px solid $color-principal;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: $color-principal;
+      color: white;
+      border: none;
+      padding: $espaciado-sm;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($color-principal, 10%);
+      }
+    }
+  }
+}
