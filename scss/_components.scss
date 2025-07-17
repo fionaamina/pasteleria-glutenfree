@@ -9,24 +9,10 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   }
 }
+
 .card-img-top {
-  height: 200px; // o el alto que te guste
+  height: 200px;
   object-fit: cover;
   border-top-left-radius: $radio-borde;
   border-top-right-radius: $radio-borde;
-}
-.animate-fade {
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(15px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
 }

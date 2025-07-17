@@ -1,9 +1,25 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $fuente-base;
+  background-color: $fondo-claro;
+  color: $gris-oscuro;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: $fuente-titulos;
+  color: $gris-oscuro;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 section {
@@ -12,40 +28,36 @@ section {
   margin-bottom: $espaciado;
   padding: $espaciado;
 }
+
 .nav-link {
   font-weight: 500;
   color: $gris-oscuro;
+
   &.active {
     font-weight: 700;
     color: $color-principal;
     border-bottom: 2px solid $color-principal;
   }
-}
-.animate-fade {
-  opacity: 0;
-  animation: fadeIn 1.2s ease-in-out forwards;
+
+  &:hover {
+    color: $color-principal;
+  }
 }
 
+// Animación fadeIn para aparición suave
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px); 
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-// Animaciones para scroll
+
 .animate-fade {
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeIn 1s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: none;
-  }
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
 }
