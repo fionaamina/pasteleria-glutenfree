@@ -5,21 +5,14 @@
 }
 
 body {
-  font-family: $fuente-base;
-  background-color: $fondo-claro;
+  font-family: $fuente-general;
+  background-color: #fff;
   color: $gris-oscuro;
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: $fuente-titulos;
-  color: $gris-oscuro;
-  margin-bottom: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 section {
@@ -29,25 +22,21 @@ section {
   padding: $espaciado;
 }
 
+// Navbar
 .nav-link {
   font-weight: 500;
   color: $gris-oscuro;
-
   &.active {
     font-weight: 700;
     color: $color-principal;
     border-bottom: 2px solid $color-principal;
   }
-
-  &:hover {
-    color: $color-principal;
-  }
 }
 
-// Animación fadeIn para aparición suave
+// Animación general
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
   }
   to {
@@ -57,7 +46,6 @@ section {
 }
 
 .animate-fade {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
   animation: fadeIn 0.8s ease-out forwards;
 }

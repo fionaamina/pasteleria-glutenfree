@@ -1,60 +1,82 @@
-body {
-  font-family: $fuente-principal;
-  background-color: $color-fondo;
-  color: $color-texto;
-  margin: 0;
-  padding: 0;
-}
+.contacto {
+  background-color: $gris-suave;
+  padding: 3rem;
 
-header, footer {
-  background-color: $color-secundario;
-  padding: $espaciado;
-}
-
-.navbar {
-  a {
+  h2 {
     color: $color-principal;
-    font-weight: bold;
-    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
 
-    &:hover {
-      color: $color-acento;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+      padding: 1rem;
+      border: 1px solid $color-principal;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: $color-principal;
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $color-principal-hover;
+      }
+    }
+  }
+}
+
+// Página Nosotros
+.nosotros {
+  background-color: #fff;
+  padding: 3rem;
+
+  h1 {
+    color: $color-principal;
+    margin-bottom: 1.5rem;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: $sombra-suave;
+    }
+
+    p {
+      max-width: 800px;
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
   }
 
-  .nav-link.active {
-    border-bottom: 2px solid $color-acento;
+  @media (min-width: 768px) {
+    .contenido {
+      flex-direction: row;
+      text-align: left;
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        width: 50%;
+        padding-left: 1.5rem;
+      }
+    }
   }
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: $color-texto;
-}
-
-main {
-  padding: $espaciado;
-
-  
-}
-.nav-link {
-  font-weight: 500;
-  color: $gris-oscuro;
-  &.active {
-    font-weight: 700;
-    color: $color-principal;
-    border-bottom: 2px solid $color-principal;
-  }
-}
-.hero {
-  background-image: url("../img/fondo-home.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 80vh;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-}
-.logo {
-  height: 50px;
-  width: auto;
 }
