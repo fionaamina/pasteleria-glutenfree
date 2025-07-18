@@ -103,6 +103,9 @@ footer {
   transform: translateY(15px);
   animation: fadeIn 0.8s ease-in-out forwards;
 }
+.fade-trigger {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
 
 @keyframes fadeIn {
   0% {

@@ -49,3 +49,15 @@ section {
   opacity: 1;
   animation: fadeIn 0.8s ease-out forwards;
 }
+a,
+button,
+.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+button:hover,
+.nav-link:hover {
+  color: $color-acento;
+  transform: translateY(-2px);
+}
